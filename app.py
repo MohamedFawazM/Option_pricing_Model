@@ -1,13 +1,13 @@
 import streamlit as st
 
-st.set_page_config(page_title="Option Pricing (India)", layout="centered")
+st.set_page_config(page_title="Option Pricing ", layout="centered")
 
 from datetime import date
 from bs_model import black_scholes
 from monte_carlo import monte_carlo_price
 from binomial_model import binomial_price
 
-st.title(" Indian Option Pricing ")
+st.title(" Option Pricing ")
 
 S = st.number_input("Spot Price (S)", value=23000.0)
 K = st.number_input("Strike Price (K)", value=23200.0)
